@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+.li-1 {
+  width: 450px;
+}
+.li-2 {
+  width: 450px;
+}
+.li-3 {
+  width: 450px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  background: #007bff;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+  margin-left: 30px;
+}
+
+.menu img {
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h2 {
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+.menu .price {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.menu .description {
+  margin: 0;
+  color: #fff;
+}
+/* menu */
+.container-box {
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SLXAKMA */
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 50px;
+}
+.search::placeholder {
+  color: #7378c5;
+}
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.movie img {
+  width: 100%;
+  object-fit: cover;
+}
+.movie-info {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.movie-info h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+.overview h3 {
+  color: #007bff;
+  margin-top: -10px;
+}
+.movie:hover .overview {
+  transform: translateY(0);
+}
+.red {
+  color: #007bff;
+}
+.container-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
